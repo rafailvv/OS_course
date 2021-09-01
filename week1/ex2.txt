@@ -1,0 +1,13 @@
+  163  sort -r /usr/bin/gcc > ~/week1/ex1.txt
+  164  pwd
+  165  ls
+  166  mkdir ~/new_directory
+  167  cd ~/new_directory
+  168  mv ~/example_for_ex2
+  169  cd ~/week1
+  170  cd ~/new_directory
+  171  sort -n -r ~/test.txt > ~/new_directory/example_for_ex2
+  172  sort -r ~/test.txt > ~/new_directory/example_for_ex2
+  173  mv ~/new_directory/example_for_ex2 ~/week1/example_for_ex2
+  174  cd ~/week1
+  175  cat example_for_ex2
