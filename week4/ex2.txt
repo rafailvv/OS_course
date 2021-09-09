@@ -1,0 +1,57 @@
+Output when calls fork() 3 times:
+
+rafailvv@MacBook-Pro-Rafail week4 % ./ex2 &     
+[2] 12241
+rafailvv@MacBook-Pro-Rafail week4 % pstree 12241
+-+= 12241 rafailvv ./ex2
+ |-+- 12242 rafailvv ./ex2
+ | |-+- 12245 rafailvv ./ex2
+ | | \--- 12248 rafailvv ./ex2
+ | \--- 12246 rafailvv ./ex2
+ |-+- 12243 rafailvv ./ex2
+ | \--- 12247 rafailvv ./ex2
+ \--- 12244 rafailvv ./ex2
+
+Eight processes are created here, because 2^3 = 8
+
+
+
+Output when calls fork() 5 times:
+
+-+= 01090 rafailvv ./ex2
+ |-+- 01091 rafailvv ./ex2
+ | |-+- 01094 rafailvv ./ex2
+ | | |-+- 01102 rafailvv ./ex2
+ | | | |-+- 01112 rafailvv ./ex2
+ | | | | \--- 01121 rafailvv ./ex2
+ | | | \--- 01120 rafailvv ./ex2
+ | | |-+- 01108 rafailvv ./ex2
+ | | | \--- 01119 rafailvv ./ex2
+ | | \--- 01118 rafailvv ./ex2
+ | |-+- 01098 rafailvv ./ex2
+ | | |-+- 01107 rafailvv ./ex2
+ | | | \--- 01117 rafailvv ./ex2
+ | | \--- 01116 rafailvv ./ex2
+ | |-+- 01100 rafailvv ./ex2
+ | | \--- 01110 rafailvv ./ex2
+ | \--- 01106 rafailvv ./ex2
+ |-+- 01092 rafailvv ./ex2
+ | |-+- 01096 rafailvv ./ex2
+ | | |-+- 01105 rafailvv ./ex2
+ | | | \--- 01114 rafailvv ./ex2
+ | | \--- 01113 rafailvv ./ex2
+ | |-+- 01099 rafailvv ./ex2
+ | | \--- 01109 rafailvv ./ex2
+ | \--- 01104 rafailvv ./ex2
+ |-+- 01093 rafailvv ./ex2
+ | |-+- 01103 rafailvv ./ex2
+ | | \--- 01115 rafailvv ./ex2
+ | \--- 01111 rafailvv ./ex2
+ |-+- 01095 rafailvv ./ex2
+ | \--- 01101 rafailvv ./ex2
+ \--- 01097 rafailvv ./ex2
+
+
+Eight processes are created here, because 2^5 = 32
+
+Processes are created like this: when fork () is called, a child is created for all existing processes. 

@@ -1,0 +1,23 @@
+Hello from parent [12127 - 10]
+Hello from child [12128 - 10]
+Hello from parent [12129 - 10]
+Hello from child [12130 - 10]
+Hello from parent [12131 - 10]
+Hello from child [12132 - 10]
+Hello from parent [12133 - 10]
+Hello from child [12134 - 10]
+Hello from parent [12135 - 10]
+Hello from child [12136 - 10]
+Hello from parent [12137 - 10]
+Hello from child [12138 - 10]
+Hello from parent [12139 - 10]
+Hello from child [12140 - 10]
+Hello from parent [12141 - 10]
+Hello from child [12142 - 10]
+Hello from parent [12143 - 10]
+Hello from child [12144 - 10]
+Hello from parent [12145 - 10]
+Hello from child [12146 - 10]
+
+The output of the program looks exactly like this, because when the fork() method is executed, a child is created for the process that was before, and it becomes the parent.
+As a result, we have 20 processes, of which 10 are parents and 10 childrens
