@@ -1,0 +1,46 @@
+Comparing the outputs from ex1, ex2, ex3 for the same input.
+
+First come, firest served algorithm (ex1):
+Sorts by arrival time and queues them in the order in which they were sorted.
+
+
+               Statistics
+================================================================================================================================================================
+               Process id             Arrival Time               Burst Time          Completion Time             Waiting Time          Turnaround Time
+                        1                        0                       10                       10                        0                       10
+                        2                        0                        5                       15                       10                       15
+                        3                        1                        2                       17                       14                       16
+                        4                        2                        3                       20                       15                       18
+================================================================================================================================================================
+                  Average                                                                                            9.750000                14.750000
+
+Shortest job next algorithm (ex2):
+Selects for execution the waiting process with the smallest execution time which alredy ready to execute
+               Statistics
+================================================================================================================================================================
+               Process id             Arrival Time               Burst Time          Completion Time             Waiting Time          Turnaround Time
+                        2                        0                        5                        5                        0                        5
+                        3                        1                        2                        7                        4                        6
+                        4                        2                        3                       10                        5                        8
+                        1                        0                       10                       20                       10                       20
+================================================================================================================================================================
+                  Average                                                                                            4.750000                 9.750000
+
+Round robin algorithm (ex3):
+Interapting the job using the quantum if it is not completed by the time slot. The job is performed using a queue of those processes that have not yet terminated each itteration
+
+Quantum = 3
+               Statistics
+================================================================================================================================================================
+               Process id             Arrival Time               Burst Time          Completion Time             Waiting Time          Turnaround Time
+                        1                        0                       10                       20                       10                       20
+                        2                        0                        5                       16                       11                       16
+                        3                        1                        2                        8                        5                        7
+                        4                        2                        3                       11                        6                        9
+================================================================================================================================================================
+                  Average                                                                                            8.000000                13.000000
+
+
+
+Summing up, I want to highlight that the shortest job next algorithm consumes less average waiting time and turnaround time.
+The first come first served more, time of executing usen round robin directly depends on quantum coefficient.
