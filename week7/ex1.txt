@@ -1,0 +1,14 @@
+Size of ex1.1.c:
+
+   text    data    bss    dec    hex filename
+   1418     544      8   1970    7b2 ex1.1.out
+
+Size of ex1.2.c:
+
+   text    data    bss    dec    hex filename
+   1418     548      4   1970    7b2 ex1.2.out
+
+Size of ex1.3.c:
+
+   text    data    bss    dec    hex filename
+   1603     604      4   2211    8a3 ex1.3.out
