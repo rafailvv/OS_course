@@ -1,0 +1,27 @@
+In console wiil returned the information about amount of memory which program use. 
+
+Each iteration the size of memory will increase by about 10mb(10^7 bytes) (without using free())
+
+11227136
+21712896
+32198656
+42684416
+53170176
+63655936
+74141696
+84627456
+95113216
+105598976
+
+With free() the required memory wiil be the same
+
+11227136
+11227136
+11227136
+11227136
+11227136
+11227136
+11227136
+11227136
+11227136
+11227136

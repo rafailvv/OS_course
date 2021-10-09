@@ -1,0 +1,9 @@
+Virtual address - 16 bit. The number of virtual addresses - 2^16
+
+Pages - 8 KB. I should also convert into the bytes
+In 1 KB = 2^10 B = 1024 B => 8*2^10 = 2^13 B = 8192 B
+
+Fro computing the number of entries are need for a single-level linear page table we should divide the virtual addressess to the pages
+2^16 / 2^13 = 8 - number of pages that we need to have in page table  
+
+Answer: 8

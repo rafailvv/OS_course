@@ -1,0 +1,3 @@
+Physical address is the real address of a specific memory location into the hardware system, while virtual address is memory location address in virtual memory wich not real.
+Besides, a physical addres is precisely limited, while a virtual addres may be outside the physical (may huge limite compared with physical). 
+Moreover, Virtual addres can be have the reference to the physical addres.

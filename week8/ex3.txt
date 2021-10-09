@@ -1,0 +1,4 @@
+After the executing the ex3.sh file I will see on the top of the screen that memory each iteration wiil decrease on 10 mb. (after removing the free())
+In oposite way using free() the memory will almost not change
+I think this actions is obvious, because I am using the malloc() wich allocate the memory on 10mb (in our case) and with free() ecah iteration the memory will be clean. 
+But without it the progrgram will require 10mb more and more
