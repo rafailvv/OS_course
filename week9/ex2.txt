@@ -1,0 +1,6 @@
+1. To INCREASE the hit-to-miss ratio, the input data must contain pages with the same number. 
+Then the number of hits will be equal to m, and the number of misses will be zero. 
+Their ratio will go to the infinity
+2. To DECREASE the hit-to-miss reatio, the all pages should have the unique numbers.
+Then the hit and miss will be equal to 0, therefore ratio also equal to zero. 
+ 
