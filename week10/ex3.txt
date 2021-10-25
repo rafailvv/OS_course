@@ -1,0 +1,6 @@
+-rw-rw-rw-  1 rafailvv  staff  14 Oct 25 12:46 _ex3.txt
+-rwxrw-rwx  1 rafailvv  staff  14 Oct 25 12:46 _ex3.txt
+-rwxrwxrwx  1 rafailvv  staff  14 Oct 25 12:46 _ex3.txt
+660 means that the owner permission is r+w (6 in decimal = 110 in binary, 1 - allow, 0 - prohibits), the group permission r+w (the same) and the other permission is nothing (0 in decimal = 000 in binary, no permission). Total permission is -rw-rw----
+775 means that the owner permission is r+w+x (7 in decimal = 111 in binary, 1 - allow, 0 - prohibits), the group permission r+w+x (the same) and the other permission is r+x (5 in decimal = 101 in binary, 1 - allow, 0 - prohibits). Total permissions is -rwxrwxr-x
+777 seem that for owner, group and others allowed to read, write and execute. Total permissions is -rwxrwxrwx
