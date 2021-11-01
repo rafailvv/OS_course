@@ -1,0 +1,2 @@
+ex2.c lib64 lost+found file1.txt ex2 file2.txt ex2.txt lib bin 
+ex2.c lib64 lost+found file1.txt ex2 file2.txt ex2.txt lib bin 
