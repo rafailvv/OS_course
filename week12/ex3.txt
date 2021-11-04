@@ -1,0 +1,23 @@
+p	I passed the Exam!
+e
+
+e	I passed the Exam!
+p
+
+ca	Get some cappuccino!
+p
+
+pa	Get some cappuccino!
+c
+
+ap	Get some cappuccino!
+c
+
+ra	My name is Rafail
+f
+
+fa	My name is Rafail
+r
+
+af	My name is Rafail
+r
