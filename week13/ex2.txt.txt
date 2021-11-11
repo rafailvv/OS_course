@@ -1,0 +1,39 @@
+Strategies of dealing with deadlocks:
+
+1) Recovery
+  Has two approches: "optimistic" and "pessimistic"
+	Resource Preemption:
+	Preemt some resources from process and give these resources to other processes
+	until the deadlock cycle os broken
+	Issues:
+	- Selecting a victim: determine which resources and which processes are to be preempted
+	- Rollback: determine what should be done with the process from which resources are preempted.
+	- Starvation: it can happen in the system that the same process is always selected as the victim (starvation)
+	
+	Process Termination: Killin one or more processes. 
+	Methods:
+	- Abort all the deadlocked processes. The method of killing all the processes maybe very costly 
+	- Abort process at a time and decide next to abort after deadlock detection. But here the overhead
+		the calling the deadlock detection algorithm every time after killing of each process.
+  
+   Thus, this method has a lot of issues even into the "optimistc" approach
+		
+2) Prevention
+  The idea is preventing any of the conditions:
+	- Mutual Exclusion (It is impossible not to satisfy mutual exclusion since some resources are not shared)
+	- Hold and Wait (Allocate all necessary resources to the process before starting its execution and make a new request for resources after freeing the current set of resources)
+	- No preemption (Preempt resources from the process for other high priority processes)
+	- Circular wait (Request an increase / decrease in resources in order of numbering)
+   
+   Thus, this method takes so much time and memory and has the ability to solve the problem in any one of four ways (flexibility)
+	
+3) Avoidance
+  The idea is using Bankers’s Algorithm where checks whether the system is in safe state or in unsafe state at every step which the operating system performs, 
+        if after submitting the request the system remains in a safe state, it allows the request, otherwise it does not allow the request made by the process and must go back one step	
+
+  Thus, this method is requires more information about each process and more resoursess of OS.
+
+
+Therefore, Prevention is better than other strategies because required less OS resiuresess and process information. 
+Also has a lot of different approaches for improving the flexibility for the solving the problem.
+Worst of all is Recovery as each approach has many drawbacks such as amount of time of executing, overheading and others
